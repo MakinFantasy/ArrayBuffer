@@ -4,4 +4,20 @@ export default class Character {
         this.type = type;
         this.attack = attack;
     }
+
+    get stoned () {
+
+    }
+
+    set stoned (x) {
+
+    }
+
+    get attacks () {
+
+    }
+
+    set attacks (x) {
+
+    }
 }
