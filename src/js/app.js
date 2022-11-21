@@ -6,18 +6,18 @@ export default class Character {
     }
 
     get stoned () {
-
+        return this.attack;
     }
 
     set stoned (x) {
-
+        this.attack = Math.round( this.attacks - (Math.log2(x) * 5 ))
     }
 
     get attacks () {
-
+        return this.attack
     }
 
     set attacks (x) {
-
+        this.attack = Math.round( (this.attack * (-0.1 * x + 1.1 )))
     }
 }
